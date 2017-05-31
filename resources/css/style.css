@@ -85,6 +85,12 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+  .main-content {
+    top: 2rem;
+  }
+  header {
+    height: 3rem;
+  }
   header .desktop {
     display: none;
   }
@@ -103,6 +109,7 @@ header .mobile {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+
   }
 
   header .mobile li {
@@ -114,6 +121,19 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    height: 48px;
+  }
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -190,11 +210,12 @@ header .mobile {
   }
 
   #sign-up-cta {
-    position: static;
     width: auto;
     height: auto;
     background-color: transparent;
     border: none;
+    top: 1px;
+    margin: 0;
   }
 
   #sign-up-cta .content {
@@ -250,10 +271,6 @@ header .mobile {
   height: 65%;
 }
 
-.center {
-
-}
-
 .image-container {
   overflow: hidden;
 }
@@ -288,6 +305,7 @@ header .mobile {
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
+    padding-bottom: 1rem;
   }
 }
 
@@ -299,7 +317,19 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1.25rem 1rem 0rem 1rem;
+  }
+  .feature h2 {
+    margin-top: 1rem;
+  }
+  .feature h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .feature h3 {
+    margin-bottom: 18px;
   }
 }
 
@@ -389,21 +419,21 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
